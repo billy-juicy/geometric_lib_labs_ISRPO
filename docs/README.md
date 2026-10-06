@@ -1,10 +1,84 @@
-# Math formulas
-## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
+# geometric_lib
 
-## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
+## Общее описание решения
+
+**Технологии:** Python3 (модуль `math`), bash
+
+***Структура проекта:***
+```
+.
+├── circle.py
+├── docs
+│   └── README.md
+├── square.py
+├── u1.txt
+├── u2.txt
+└── u3.txt
+```
+
+**Использование:** импортируйте нужные функции в свой скрипт:
+```python 
+from circle import area as circle_area, perimeter as circle_perimeter
+from square import area as square_area, perimeter as square_perimeter
+```
+
+## Описание функций
+
+### circle.py
+
+#### `area(r)`
+Вычисляет площадь круга по его радиусу. Формула: `S = π · r²`.
+
+- **Параметры:** `r` — радиус круга (число > 0)
+- **Возвращает:** площадь круга (float)
+- **Пример вызова:**
+```python
+from circle import area
+area(5)  # 78.53981633974483
+```
+
+#### `perimeter(r)`
+Вычисляет длину окружности (периметр круга) по его радиусу. Формула: `P = 2 · π · r`.
+
+- **Параметры:** `r` — радиус круга (число > 0)
+- **Возвращает:** длину окружности (float)
+- **Пример вызова:**
+```python
+from circle import perimeter
+perimeter(5)  # 31.41592653589793
+```
+
+### square.py
+
+#### `area(a)`
+Вычисляет площадь квадрата по длине его стороны. Формула: `S = a²`.
+
+- **Параметры:** `a` — длина стороны квадрата (число > 0)
+- **Возвращает:** площадь квадрата (int/float)
+- **Пример вызова:**
+```python
+from square import area
+area(4)  # 16
+```
+
+#### `perimeter(a)`
+Вычисляет периметр квадрата по длине его стороны. Формула: `P = 4 · a`.
+
+- **Параметры:** `a` — длина стороны квадрата (число > 0)
+- **Возвращает:** периметр квадрата (int/float)
+- **Пример вызова:**
+```python
+from square import perimeter
+perimeter(4)  # 16
+```
+
+---
+
+## История изменения проекта
+
+
+| Хэш коммита | Описание изменения            |
+| ----------- | ----------------------------- |
+| 8ba9aeb     | L-03: Circle and square added |
+| d078c8d     | L-03: Docs added              |
+| d1048cd     | add u1.txt u3.txt             |
