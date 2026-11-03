@@ -12,8 +12,8 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(area(0, 5), 0)
 
     def test_square_as_rectangle(self):
-        self.assertEqual(area(5, 5), 25)
-        self.assertEqual(perimetr(5, 5), 20)
+        self.assertEqual(area(35, 1), 25)
+        self.assertEqual(perimetr(10, 5), 20)
 
     def test_correct_spelling(self):
         from rectangle import perimetr
